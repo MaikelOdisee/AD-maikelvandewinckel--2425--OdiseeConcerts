@@ -3,6 +3,7 @@ using OdiseeConcerts.Models;
 using OdiseeConcerts.ViewModels;
 using System.Linq; // Nodig voor .FirstOrDefault()
 using System; // Nodig voor DateTime
+using System.Threading.Tasks; // Nodig voor Task (voor de UpdateTicketOffer methode)
 
 namespace OdiseeConcerts.Services
 {
@@ -50,9 +51,7 @@ namespace OdiseeConcerts.Services
             }
 
             decimal finalPrice = ticketOffer.Price;
-            // De DiscountApplied flag wordt in OrderFormViewModel gezet, niet hier.
-            // De service berekent alleen de prijs, de ViewModel en Order slaan op of korting is toegepast.
-            bool discountAppliedForDisplay = false;
+            bool discountAppliedForDisplay = false; // Deze variabele is hier niet direct nodig voor de ViewModel, maar voor context
 
             if (hasMemberCard)
             {
@@ -60,12 +59,20 @@ namespace OdiseeConcerts.Services
                 discountAppliedForDisplay = true;
             }
 
+            // Genereer de afbeeldings-URL op dezelfde manier als in ConcertViewModel
+            // Zorg ervoor dat je afbeeldingsbestanden (bijv. .png) in de wwwroot/img map staan
+            // en overeenkomen met de geformatteerde artiestennamen (bijv. "Taylor Swift" -> "taylorswift.png").
+            var formattedArtistName = ticketOffer.Concert.Artist.Replace(" ", "").ToLower();
+            var artistPicturePath = $"/img/{formattedArtistName}.png";
+
+
             return new OrderFormViewModel
             {
                 ConcertId = ticketOffer.Concert.Id,
                 Artist = ticketOffer.Concert.Artist,
                 Location = ticketOffer.Concert.Location,
                 Date = ticketOffer.Concert.Date,
+                ArtistPicture = artistPicturePath, // TOEGEVOEGD: ArtistPicture nu gevuld
                 TicketOfferId = ticketOffer.Id,
                 TicketDescription = ticketOffer.TicketType,
                 PricePerTicket = finalPrice,
@@ -73,11 +80,6 @@ namespace OdiseeConcerts.Services
                 HasMemberCard = hasMemberCard,
                 TotalPrice = finalPrice, // Bij initiële weergave is Totaalprijs = Prijs per ticket * 1
                 AvailableTicketsInOffer = ticketOffer.NumTickets,
-                // We voegen een veld toe aan OrderFormViewModel om te onthouden of de korting IS toegepast,
-                // zodat de controller dit kan doorgeven aan de Order.
-                // Echter, het OrderFormViewModel heeft dit nog niet.
-                // We kunnen dit later toevoegen aan OrderFormViewModel, of hier direct doorgeven aan de Order
-                // wanneer de CreateOrder actie wordt aangeroepen. Voor nu laten we het hier buiten beschouwing.
             };
         }
 
@@ -85,18 +87,19 @@ namespace OdiseeConcerts.Services
         /// Werkt het aantal beschikbare tickets van een TicketOffer bij.
         /// </summary>
         /// <param name="model">Een ViewModel met de bijgewerkte informatie over de ticketaanbieding.</param>
-        public void UpdateTicketOffer(TicketOfferUpdateViewModel model)
+        public async Task UpdateTicketOffer(TicketOfferUpdateViewModel model) // AANGEPAST: Methode is nu async Task
         {
             var ticketOffer = _ticketOfferRepository.GetTicketOfferById(model.Id); // Gebruik de methode zonder Include, want we updaten alleen de TicketOffer zelf
             if (ticketOffer != null)
             {
                 ticketOffer.NumTickets = model.NewNumTickets;
-                _ticketOfferRepository.UpdateTicketOffer(ticketOffer); // Roep de Update methode van de repository aan
+                await _ticketOfferRepository.UpdateTicketOffer(ticketOffer); // Roep de async Update methode van de repository aan
             }
             else
             {
                 // Loggen of een uitzondering gooien als de ticketOffer niet gevonden wordt.
                 // Voor dit voorbeeld laten we het stil, maar in een echte app is logging essentieel.
+                Console.WriteLine($"Waarschuwing: TicketOffer met ID {model.Id} niet gevonden voor update.");
             }
         }
     }

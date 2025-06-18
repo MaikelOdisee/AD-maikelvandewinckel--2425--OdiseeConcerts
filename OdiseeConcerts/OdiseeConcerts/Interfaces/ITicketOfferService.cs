@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic; // Nodig voor IEnumerable, al is het nu nog niet direct gebruikt
 using OdiseeConcerts.ViewModels; // Nodig voor OrderFormViewModel en TicketOfferUpdateViewModel (later te maken)
+using System.Threading.Tasks; // NIEUW: Nodig voor Task
 
 namespace OdiseeConcerts.Interfaces
 {
@@ -20,6 +21,6 @@ namespace OdiseeConcerts.Interfaces
         /// Werkt het aantal beschikbare tickets van een TicketOffer bij.
         /// </summary>
         /// <param name="model">Een ViewModel met de bijgewerkte informatie over de ticketaanbieding.</param>
-        void UpdateTicketOffer(TicketOfferUpdateViewModel model); // ViewModel TicketOfferUpdateViewModel moet nog gemaakt worden
+        Task UpdateTicketOffer(TicketOfferUpdateViewModel model); // AANGEPAST: Retourtype is nu Task
     }
 }

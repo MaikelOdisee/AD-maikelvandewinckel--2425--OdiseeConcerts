@@ -20,6 +20,9 @@ namespace OdiseeConcerts.ViewModels
         [Display(Name = "Datum")]
         public DateTime Date { get; set; }
 
+        // NIEUW: Property voor de artiestenafbeelding URL
+        public string ArtistPicture { get; set; } = string.Empty;
+
         public int TicketOfferId { get; set; }
         [Display(Name = "Type Ticket")]
         public string TicketDescription { get; set; } = string.Empty;

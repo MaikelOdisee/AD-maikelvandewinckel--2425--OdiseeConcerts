@@ -7,86 +7,110 @@
 <h1 class="my-4 text-center">@ViewData["Title"]</h1>
 
 <div class="container d-flex justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-8">
+        @* AANGEPAST: Bredere kolom voor de centrale kaart *@
         <div class="card shadow-lg p-4 rounded-lg">
             <h3 class="card-title text-center mb-4">Besteldetails</h3>
             <hr />
-            <form asp-action="Buy" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <div class="row">
+                @* NIEUW: Row binnen de card-body voor 2-koloms layout *@
+                <div class="col-md-7">
+                    @* Linker kolom voor het formulier *@
+                    <form asp-action="Buy" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-                <!-- Verborgen velden voor data die we niet direct laten bewerken door de gebruiker,
-                     maar wel nodig zijn voor de POST-actie (en om Model.Artist/Location/Date te behouden bij POST-back) -->
-                <input type="hidden" asp-for="ConcertId" />
-                <input type="hidden" asp-for="TicketOfferId" />
-                @* VERWIJDERD: Hidden inputs voor PricePerTicket en TotalPrice - deze worden nu server-side bepaald! *@
-                <input type="hidden" asp-for="HasMemberCard" />
-                <input type="hidden" asp-for="AvailableTicketsInOffer" />
-                <input type="hidden" asp-for="UserId" />
+                        <!-- Verborgen velden voor data die we niet direct laten bewerken door de gebruiker,
+                             maar wel nodig zijn voor de POST-actie (en om Model.Artist/Location/Date te behouden bij POST-back) -->
+                        <input type="hidden" asp-for="ConcertId" />
+                        <input type="hidden" asp-for="TicketOfferId" />
+                        @* Belangrijk: PricePerTicket en TotalPrice worden NU NIET als hidden inputs teruggestuurd.
+                           De server berekent de prijs op basis van TicketOfferId en NumberOfTickets. *@
+                        <input type="hidden" asp-for="HasMemberCard" />
+                        <input type="hidden" asp-for="AvailableTicketsInOffer" />
+                        <input type="hidden" asp-for="UserId" />
 
-                <!-- Deze zijn nodig om de concertdetails te behouden bij een POST-back (bijv. validatiefout) -->
-                <input type="hidden" asp-for="Artist" />
-                <input type="hidden" asp-for="Location" />
-                <input type="hidden" asp-for="Date" />
-                <input type="hidden" asp-for="TicketDescription" />
+                        <!-- Deze zijn nodig om de concertdetails te behouden bij een POST-back (bijv. validatiefout) -->
+                        <input type="hidden" asp-for="Artist" />
+                        <input type="hidden" asp-for="Location" />
+                        <input type="hidden" asp-for="Date" />
+                        <input type="hidden" asp-for="TicketDescription" />
+                        <input type="hidden" asp-for="PricePerTicket" /> @* TOEGEVOEGD: PricePerTicket is nodig voor JavaScript, maar wordt niet direct gepost. *@
+                        <input type="hidden" asp-for="TotalPrice" /> @* TOEGEVOEGD: TotalPrice is nodig voor JavaScript, maar wordt niet direct gepost. *@
 
-                <!-- Concert Details -->
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Concert:</label>
-                    <p class="form-control-plaintext">@Model.Artist - @Model.Location</p>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Datum:</label>
-                    <p class="form-control-plaintext">@Model.Date.ToString("dd MMMM lọ")</p>
+
+                        <!-- Concert Details (plain text) -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Concert:</label>
+                            <p class="form-control-plaintext">@Model.Artist - @Model.Location</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Datum:</label>
+                            <p class="form-control-plaintext">@Model.Date.ToString("dd MMMM yyyy")</p>
+                        </div>
+
+                        <!-- Ticket Offer Details (plain text) -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Type Ticket:</label>
+                            <p class="form-control-plaintext">@Model.TicketDescription</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Prijs per Ticket:</label>
+                            <p class="form-control-plaintext" id="pricePerTicketDisplay">@Model.PricePerTicket.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))</p>
+                        </div>
+
+                        <!-- Ledenkaart Status & Discount Message -->
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" asp-for="HasMemberCard" disabled="disabled">
+                            <label class="form-check-label" asp-for="HasMemberCard">
+                                Ledenkaart (korting toegepast)
+                            </label>
+                        </div>
+                        @if (Model.HasMemberCard)
+                        {
+                            <div class="alert alert-success mb-3" role="alert">
+                                @* NIEUW: Groene alert voor korting *@
+                                Je lidkaart gaf je 10% korting.
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-info mb-3" role="alert">
+                                @* NIEUW: Blauwe alert als geen lidkaart *@
+                                Geen lidkaart gevonden.
+                            </div>
+                        }
+
+                        <!-- Aantal Tickets input -->
+                        <div class="mb-3">
+                            <label asp-for="NumberOfTickets" class="form-label"></label>
+                            <input asp-for="NumberOfTickets" class="form-control" type="number" min="1" max="10" />
+                            <span asp-validation-for="NumberOfTickets" class="text-danger"></span>
+                            <small class="form-text text-muted">Beschikbaar: @Model.AvailableTicketsInOffer</small>
+                        </div>
+
+                        <!-- Totale Prijs (wordt dynamisch bijgewerkt met JavaScript) -->
+                        <div class="mb-4">
+                            <label asp-for="TotalPrice" class="form-label fw-bold fs-5"></label>
+                            <input type="text" id="totalPriceDisplay" class="form-control form-control-lg text-end" readonly value="@Model.TotalPrice.ToString("F2", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))" />
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">Plaats Bestelling</button>
+                            <a asp-action="Index" class="btn btn-secondary rounded-pill">Terug naar Concerten</a>
+                        </div>
+                    </form>
                 </div>
 
-                <!-- Ticket Offer Details -->
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Type Ticket:</label>
-                    <p class="form-control-plaintext">@Model.TicketDescription</p>
+                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+                    @* Rechter kolom voor afbeelding en korte info *@
+                    @* BELANGRIJK: De 'ArtistPicture' property moet beschikbaar zijn in je OrderFormViewModel.
+                                  Zorg ervoor dat ConcertsController deze correct doorgeeft via de TicketOfferService. *@
+                    <img src="@Model.ArtistPicture" class="img-fluid rounded-lg shadow-sm mb-3" alt="Afbeelding van @Model.Artist" onerror="this.onerror=null;this.src='/img/nopic.png';" style="max-height: 250px; object-fit: cover;">
+                    <h5 class="text-center mb-1">@Model.Artist</h5>
+                    <p class="text-center text-muted">@Model.Location</p>
+                    <p class="text-center text-muted">@Model.Date.ToString("dd MMMM yyyy")</p>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Prijs per Ticket:</label>
-                    <!-- Belangrijk: Geef dit element een ID zodat JavaScript de waarde kan uitlezen -->
-                    <p class="form-control-plaintext" id="pricePerTicketDisplay">@Model.PricePerTicket.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))</p>
-                </div>
-
-                <!-- Aantal Tickets input -->
-                <div class="mb-3">
-                    <label asp-for="NumberOfTickets" class="form-label"></label>
-                    <input asp-for="NumberOfTickets" class="form-control" type="number" min="1" max="10" />
-                    <span asp-validation-for="NumberOfTickets" class="text-danger"></span>
-                    <small class="form-text text-muted">Beschikbaar: @Model.AvailableTicketsInOffer</small>
-                </div>
-
-                <!-- Ledenkaart Status -->
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" asp-for="HasMemberCard" disabled="disabled">
-                    <label class="form-check-label" asp-for="HasMemberCard">
-                        Ledenkaart (korting toegepast)
-                    </label>
-                    @if (Model.HasMemberCard)
-                    {
-                        <small class="text-success ms-2">10% korting is toegepast op de prijs per ticket.</small>
-                    }
-                    else
-                    {
-                        <small class="text-info ms-2">Geen ledenkaart gevonden.</small>
-                    }
-                </div>
-
-                <!-- Totale Prijs (wordt dynamisch bijgewerkt met JavaScript) -->
-                <div class="mb-4">
-                    <label asp-for="TotalPrice" class="form-label fw-bold fs-5"></label>
-                    <!-- Belangrijk: Geef dit element een ID zodat JavaScript de waarde kan bijwerken.
-                         De 'value' wordt initieel ingesteld op de Model.TotalPrice die van de server komt. -->
-                    <input type="text" id="totalPriceDisplay" class="form-control form-control-lg text-end" readonly value="@Model.TotalPrice.ToString("F2", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))" />
-                </div>
-
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">Plaats Bestelling</button>
-                    <a asp-action="Index" class="btn btn-secondary rounded-pill">Terug naar Concerten</a>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>

@@ -1,3 +1,4 @@
+C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\appsettings.json
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\OdiseeConcerts.staticwebassets.runtime.json
@@ -37,7 +38,6 @@ C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Windows 11\Documents\GitHub\AD-maikelvandewinckel--2425--OdiseeConcerts\OdiseeConcerts\OdiseeConcerts\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
