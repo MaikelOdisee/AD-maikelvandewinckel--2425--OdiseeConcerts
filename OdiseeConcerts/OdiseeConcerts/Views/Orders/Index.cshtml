@@ -1,0 +1,68 @@
+﻿@model IEnumerable<OdiseeConcerts.Models.Order>
+
+@{
+    ViewData["Title"] = "Overzicht Bestellingen"; // Vertaald
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nieuwe Bestelling Aanmaken</a> <!-- Vertaald, met Bootstrap class -->
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @* Het UserName veld is hier verwijderd, aangezien het niet langer deel uitmaakt van het Order model. *@
+            <th>
+                @Html.DisplayNameFor(model => model.NumTickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiscountApplied)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketOffer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @* Het UserName veld is hier verwijderd, aangezien het niet langer deel uitmaakt van het Order model. *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumTickets)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Paid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiscountApplied)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketOffer.TicketType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Email) <!-- Toont e-mail van gebruiker i.p.v. alleen ID -->
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Bewerken</a> | <!-- Vertaald -->
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> | <!-- Vertaald -->
+                    <a asp-action="Delete" asp-route-id="@item.Id">Verwijderen</a> <!-- Vertaald -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

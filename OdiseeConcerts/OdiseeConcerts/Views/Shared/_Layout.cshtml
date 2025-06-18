@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OdiseeConcerts.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false) <!-- TOEGEVOEGD: Rendert de "Styles" sectie van de views -->
 </head>
 <body>
     <header>
@@ -26,7 +27,11 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Concerts" asp-action="Index">Concerts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Orders">Bestellingen admin</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TicketOffers" asp-action="Index">Ticket Aanbiedingen</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Aangepast om naar de OrdersController te verwijzen -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Bestellingen admin</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

@@ -1,0 +1,62 @@
+﻿@model OdiseeConcerts.Models.Order
+
+@{
+    ViewData["Title"] = "Nieuwe Bestelling"; // Vertaald
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Bestelling</h4> <!-- Vertaald -->
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            @* Het Gebruikersnaam veld is hier verwijderd, aangezien het niet langer deel uitmaakt van het Order model. *@
+            <div class="form-group">
+                <label asp-for="NumTickets" class="control-label"></label>
+                <input asp-for="NumTickets" class="form-control" />
+                <span asp-validation-for="NumTickets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPrice" class="control-label"></label>
+                <input asp-for="TotalPrice" class="form-control" />
+                <span asp-validation-for="TotalPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paid" /> @Html.DisplayNameFor(model => model.Paid)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="DiscountApplied" /> @Html.DisplayNameFor(model => model.DiscountApplied)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicketOfferId" class="control-label"></label>
+                <select asp-for="TicketOfferId" class="form-control" asp-items="ViewBag.TicketOfferId"></select>
+                <span asp-validation-for="TicketOfferId" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Aanmaken" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Terug naar Overzicht</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Terug naar Overzicht</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

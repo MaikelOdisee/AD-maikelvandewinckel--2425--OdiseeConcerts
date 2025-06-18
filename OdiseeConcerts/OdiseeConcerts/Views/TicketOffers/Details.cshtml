@@ -1,0 +1,42 @@
+﻿@model OdiseeConcerts.Models.TicketOffer
+
+@{
+    ViewData["Title"] = "Details Ticket Aanbieding"; // Vertaald
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Ticket Aanbieding</h4> <!-- Vertaald -->
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TicketType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TicketType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumTickets)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumTickets)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Concert)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Concert.Artist)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Bewerken</a> | <!-- Vertaald en styling toegevoegd -->
+    <a asp-action="Index" class="btn btn-secondary">Terug naar Overzicht</a> <!-- Vertaald en styling toegevoegd -->
+</div>

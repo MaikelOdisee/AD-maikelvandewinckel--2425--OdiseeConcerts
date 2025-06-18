@@ -1,0 +1,63 @@
+﻿/* Algemene stijl voor afgeronde hoeken op de cards en afbeeldingen */
+.rounded-lg {
+    border-radius: 0.75rem !important; /* Voor consistentie met Tailwind's rounded-lg */
+}
+
+.rounded-top-lg {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/* Stijl voor de rode datum-box */
+.date-box-red {
+    background-color: #dc3545;
+    min-width: 150px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Extra styling voor de knoppen om ze wat meer 'pop' te geven */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529; /* Donkere tekst voor betere leesbaarheid op gele knop */
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #cc9500;
+        color: #212529;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+
+.btn-lg {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.25rem;
+}

@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,12 +52,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Concerts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Concerts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Concerts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Concerts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Concerts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Shared/Error.cshtml]
@@ -66,6 +110,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/TicketOffers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0T2ZmZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/TicketOffers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0T2ZmZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/TicketOffers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0T2ZmZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/TicketOffers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0T2ZmZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/TicketOffers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0T2ZmZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/_ViewImports.cshtml]

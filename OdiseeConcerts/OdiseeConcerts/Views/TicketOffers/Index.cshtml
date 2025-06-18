@@ -1,0 +1,55 @@
+﻿@model IEnumerable<OdiseeConcerts.Models.TicketOffer>
+
+@{
+    ViewData["Title"] = "Overzicht Ticket Aanbiedingen"; // Vertaald
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nieuwe Ticket Aanbieding Toevoegen</a> <!-- Vertaald, met Bootstrap class -->
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumTickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Concert)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumTickets)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Concert.Artist) <!-- Toont de artiest van het concert -->
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Bewerken</a> | <!-- Vertaald -->
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> | <!-- Vertaald -->
+                    <a asp-action="Delete" asp-route-id="@item.Id">Verwijderen</a> <!-- Vertaald -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

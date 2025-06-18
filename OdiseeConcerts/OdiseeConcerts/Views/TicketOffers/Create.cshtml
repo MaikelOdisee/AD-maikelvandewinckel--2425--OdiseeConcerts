@@ -1,0 +1,48 @@
+﻿@model OdiseeConcerts.Models.TicketOffer
+
+@{
+    ViewData["Title"] = "Nieuwe Ticket Aanbieding"; // Vertaald
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Ticket Aanbieding</h4> <!-- Vertaald -->
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TicketType" class="control-label"></label>
+                <input asp-for="TicketType" class="form-control" />
+                <span asp-validation-for="TicketType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumTickets" class="control-label"></label>
+                <input asp-for="NumTickets" class="form-control" />
+                <span asp-validation-for="NumTickets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConcertId" class="control-label"></label>
+                <select asp-for="ConcertId" class="form-control" asp-items="ViewBag.ConcertId"></select>
+                <span asp-validation-for="ConcertId" class="text-danger"></span> <!-- Toevoegen van validation span voor ConcertId -->
+            </div>
+            <div class="form-group mt-3">
+                <!-- Margine toegevoegd voor de knop -->
+                <input type="submit" value="Aanmaken" class="btn btn-primary" /> <!-- Vertaald -->
+                <a asp-action="Index" class="btn btn-secondary">Terug naar Overzicht</a> <!-- Vertaald, met Bootstrap class -->
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -159,6 +159,88 @@ namespace OdiseeConcerts.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("OdiseeConcerts.Models.Concert", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Artist")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Concerts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Artist = "Taylor Swift",
+                            Date = new DateTime(2025, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Koning Boudewijn Stadion, Brussel"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Artist = "Taylor Swift",
+                            Date = new DateTime(2025, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Koning Boudewijn Stadion, Brussel"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Artist = "Charli XCX",
+                            Date = new DateTime(2025, 4, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Vorst Nationaal, Brussel"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Artist = "Compact Disk Dummies",
+                            Date = new DateTime(2025, 4, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Ancienne Belgique, Brussel"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Artist = "Compact Disk Dummies",
+                            Date = new DateTime(2025, 4, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Ancienne Belgique, Brussel"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Artist = "Coldplay",
+                            Date = new DateTime(2025, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Sportpaleis, Antwerpen"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Artist = "Dua Lipa",
+                            Date = new DateTime(2025, 6, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Werchter"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Artist = "Dua Lipa",
+                            Date = new DateTime(2025, 6, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Location = "Werchter"
+                        });
+                });
+
             modelBuilder.Entity("OdiseeConcerts.Models.CustomUser", b =>
                 {
                     b.Property<string>("Id")
@@ -235,6 +317,232 @@ namespace OdiseeConcerts.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("OdiseeConcerts.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("DiscountApplied")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("NumTickets")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Paid")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TicketOfferId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TicketOfferId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("OdiseeConcerts.Models.TicketOffer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ConcertId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTickets")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<string>("TicketType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ConcertId");
+
+                    b.ToTable("TicketOffers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcertId = 1,
+                            NumTickets = 10,
+                            Price = 200m,
+                            TicketType = "Golden Circle"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcertId = 1,
+                            NumTickets = 50,
+                            Price = 50m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ConcertId = 1,
+                            NumTickets = 60,
+                            Price = 60m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ConcertId = 2,
+                            NumTickets = 1000,
+                            Price = 200m,
+                            TicketType = "Golden Circle"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ConcertId = 2,
+                            NumTickets = 19000,
+                            Price = 50m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ConcertId = 2,
+                            NumTickets = 20000,
+                            Price = 60m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ConcertId = 3,
+                            NumTickets = 0,
+                            Price = 100m,
+                            TicketType = "Golden Circle"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ConcertId = 3,
+                            NumTickets = 0,
+                            Price = 28m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ConcertId = 3,
+                            NumTickets = 0,
+                            Price = 32m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ConcertId = 4,
+                            NumTickets = 2000,
+                            Price = 28m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ConcertId = 4,
+                            NumTickets = 1800,
+                            Price = 32m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            ConcertId = 5,
+                            NumTickets = 2000,
+                            Price = 28m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            ConcertId = 5,
+                            NumTickets = 7800,
+                            Price = 32m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ConcertId = 6,
+                            NumTickets = 400,
+                            Price = 150m,
+                            TicketType = "Golden Circle"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            ConcertId = 6,
+                            NumTickets = 4000,
+                            Price = 65m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            ConcertId = 6,
+                            NumTickets = 4000,
+                            Price = 55m,
+                            TicketType = "Seated"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            ConcertId = 7,
+                            NumTickets = 1000,
+                            Price = 124m,
+                            TicketType = "Golden Circle"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            ConcertId = 7,
+                            NumTickets = 20000,
+                            Price = 67m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            ConcertId = 8,
+                            NumTickets = 2000,
+                            Price = 36m,
+                            TicketType = "Standing"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            ConcertId = 8,
+                            NumTickets = 7800,
+                            Price = 40m,
+                            TicketType = "Seated"
+                        });
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -284,6 +592,46 @@ namespace OdiseeConcerts.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("OdiseeConcerts.Models.Order", b =>
+                {
+                    b.HasOne("OdiseeConcerts.Models.TicketOffer", "TicketOffer")
+                        .WithMany("Orders")
+                        .HasForeignKey("TicketOfferId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("OdiseeConcerts.Models.CustomUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TicketOffer");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OdiseeConcerts.Models.TicketOffer", b =>
+                {
+                    b.HasOne("OdiseeConcerts.Models.Concert", "Concert")
+                        .WithMany("TicketOffers")
+                        .HasForeignKey("ConcertId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Concert");
+                });
+
+            modelBuilder.Entity("OdiseeConcerts.Models.Concert", b =>
+                {
+                    b.Navigation("TicketOffers");
+                });
+
+            modelBuilder.Entity("OdiseeConcerts.Models.TicketOffer", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

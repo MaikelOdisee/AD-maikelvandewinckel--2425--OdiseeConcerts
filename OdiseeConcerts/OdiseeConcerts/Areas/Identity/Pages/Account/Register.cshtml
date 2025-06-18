@@ -52,19 +52,20 @@
             <h3>Gebruik een andere service om te registreren.</h3>
             <hr />
             @{
+                // Controleer of er externe logins zijn geconfigureerd
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
+                    // Toon bericht als er geen externe logins zijn
                     <div>
                         <p>
-                            Er zijn geen externe authenticatiediensten geconfigureerd. Zie dit <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
-                                artikel
-                                over het instellen van deze ASP.NET-applicatie om in te loggen via externe diensten
-                            </a>.
+                            Er zijn geen externe authenticatiediensten geconfigureerd. Zie dit
+                            <a href="https://go.microsoft.com/fwlink/?LinkID=532715">artikel over het instellen van deze ASP.NET-applicatie om in te loggen via externe diensten</a>.
                         </p>
                     </div>
                 }
                 else
                 {
+                    // Toon knoppen voor externe logins indien aanwezig
                     <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
                         <div>
                             <p>
