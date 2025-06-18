@@ -11,7 +11,9 @@
 <table class="table">
     <thead>
         <tr>
-            @* Het UserName veld is hier verwijderd, aangezien het niet langer deel uitmaakt van het Order model. *@
+            <th>
+                Concert <!-- NIEUW: Kolom voor Concert -->
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.NumTickets)
             </th>
@@ -37,7 +39,18 @@
         @foreach (var item in Model)
         {
             <tr>
-                @* Het UserName veld is hier verwijderd, aangezien het niet langer deel uitmaakt van het Order model. *@
+                <td>
+                    @* NIEUW: Weergave van Concert details met null-check, vergelijkbaar met UnpaidOrders.cshtml *@
+                    @{
+                        var concertInfo = "Onbekend Concert";
+                        if (item.TicketOffer?.Concert != null)
+                        {
+                            // Toont Artiest - Locatie - Datum
+                            concertInfo = $"{item.TicketOffer.Concert.Artist} - {item.TicketOffer.Concert.Location} - {item.TicketOffer.Concert.Date.Date.ToString("dd/MM/yyyy")}";
+                        }
+                    }
+                    @concertInfo
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.NumTickets)
                 </td>

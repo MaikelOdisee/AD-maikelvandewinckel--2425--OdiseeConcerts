@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\orders\\unpaidorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\orders\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -191,10 +207,6 @@
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\models\\concert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -203,16 +215,8 @@
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\validationattributes\\membercardnumbervalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\validationattributes\\membercardnumbervalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|solutionrelative:odiseeconcerts\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{452D015E-2DD6-4BC7-8277-0ED6FBF52944}|OdiseeConcerts\\OdiseeConcerts.csproj|c:\\users\\windows 11\\documents\\github\\ad-maikelvandewinckel--2425--odiseeconcerts\\odiseeconcerts\\odiseeconcerts\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -226,24 +230,138 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UnpaidOrders.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T16:10:11.451Z",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "OdiseeConcerts\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T18:04:41.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwE8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T16:31:50.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OdiseeConcerts\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAEIBAAAAAAAAAAA6wFoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:10:43.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "OdiseeConcerts\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T08:05:03.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Program.cs",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Program.cs",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Program.cs",
+              "RelativeToolTip": "OdiseeConcerts\\Program.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAiwJMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:53:56.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwEMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T15:36:34.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T13:50:35.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T14:19:52.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T13:11:49.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Success.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Success.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Success.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\Success.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAiwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T09:16:54.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Buy.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Buy.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Buy.cshtml",
@@ -255,85 +373,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Success.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Success.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Success.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Success.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\Success.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAiwGQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UnpaidOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
+              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
+              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
+              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\UnpaidOrders.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T09:16:54.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T16:10:11.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwEIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T16:31:50.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "OdiseeConcerts\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAEgBAAAAAAAAAAAmwFoBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T14:10:43.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IOrderService.cs",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IOrderService.cs",
-              "RelativeToolTip": "OdiseeConcerts\\Interfaces\\IOrderService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T08:05:03.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Program.cs",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Program.cs",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Program.cs",
-              "RelativeToolTip": "OdiseeConcerts\\Program.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAiwJMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T07:53:56.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAiwD4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T15:36:34.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "OrderFormViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ViewModels\\OrderFormViewModel.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ViewModels\\OrderFormViewModel.cs",
@@ -345,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Services\\OrderService.cs",
@@ -353,12 +405,11 @@
               "RelativeToolTip": "OdiseeConcerts\\Services\\OrderService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAK0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T08:27:48.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T08:27:48.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ITicketOfferRepository.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\ITicketOfferRepository.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\ITicketOfferRepository.cs",
@@ -370,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "TicketOfferRepository.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Repositories\\TicketOfferRepository.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Repositories\\TicketOfferRepository.cs",
@@ -382,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "ConcertsController.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Controllers\\ConcertsController.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Controllers\\ConcertsController.cs",
@@ -394,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\IOrderRepository.cs",
@@ -406,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Repositories\\OrderRepository.cs",
@@ -418,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Index.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Index.cshtml",
@@ -430,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "CustomUser.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Models\\CustomUser.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Models\\CustomUser.cs",
@@ -442,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ConcertViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ViewModels\\ConcertViewModel.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ViewModels\\ConcertViewModel.cs",
@@ -454,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Details.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Details.cshtml",
@@ -466,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "ConcertTicketOffersViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ViewModels\\ConcertTicketOffersViewModel.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ViewModels\\ConcertTicketOffersViewModel.cs",
@@ -478,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "20250618092523_AddHasMemberCardAndOrderDate.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Migrations\\20250618092523_AddHasMemberCardAndOrderDate.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Migrations\\20250618092523_AddHasMemberCardAndOrderDate.cs",
@@ -490,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "concerts.css",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\wwwroot\\css\\concerts.css",
               "RelativeDocumentMoniker": "OdiseeConcerts\\wwwroot\\css\\concerts.css",
@@ -502,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Models\\Order.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Models\\Order.cs",
@@ -514,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "ConcertService.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Services\\ConcertService.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Services\\ConcertService.cs",
@@ -526,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "IConcertService.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\IConcertService.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\IConcertService.cs",
@@ -538,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "TicketOfferUpdateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ViewModels\\TicketOfferUpdateViewModel.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ViewModels\\TicketOfferUpdateViewModel.cs",
@@ -550,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "TicketOfferService.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Services\\TicketOfferService.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Services\\TicketOfferService.cs",
@@ -562,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ViewModels\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ViewModels\\OrderViewModel.cs",
@@ -574,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ITicketOfferService.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Interfaces\\ITicketOfferService.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Interfaces\\ITicketOfferService.cs",
@@ -586,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\appsettings.Development.json",
               "RelativeDocumentMoniker": "OdiseeConcerts\\appsettings.Development.json",
@@ -598,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "OdiseeConcerts.csproj",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts.csproj",
               "RelativeDocumentMoniker": "OdiseeConcerts\\OdiseeConcerts.csproj",
@@ -610,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "20250617202251_InitialCleanSetupWithIdentity.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Migrations\\20250617202251_InitialCleanSetupWithIdentity.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Migrations\\20250617202251_InitialCleanSetupWithIdentity.cs",
@@ -622,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "TicketOffer.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Models\\TicketOffer.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Models\\TicketOffer.cs",
@@ -634,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Details.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Details.cshtml",
@@ -646,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Edit.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Edit.cshtml",
@@ -658,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Models\\BaseEntity.cs",
@@ -670,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\TicketOffers\\Create.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\TicketOffers\\Create.cshtml",
@@ -682,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Create.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Create.cshtml",
@@ -694,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Orders\\Delete.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Orders\\Delete.cshtml",
@@ -706,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\TicketOffers\\Delete.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\TicketOffers\\Delete.cshtml",
@@ -718,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\TicketOffers\\Details.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\TicketOffers\\Details.cshtml",
@@ -730,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Delete.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Delete.cshtml",
@@ -742,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Edit.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Edit.cshtml",
@@ -754,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Concerts\\Create.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Concerts\\Create.cshtml",
@@ -766,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\TicketOffers\\Index.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\TicketOffers\\Index.cshtml",
@@ -778,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\TicketOffers\\Edit.cshtml",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\TicketOffers\\Edit.cshtml",
@@ -790,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "Concert.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Models\\Concert.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Models\\Concert.cs",
@@ -802,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "MemberCardNumberValidationAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ValidationAttributes\\MemberCardNumberValidationAttribute.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ValidationAttributes\\MemberCardNumberValidationAttribute.cs",
@@ -814,19 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T13:50:35.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -838,19 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T14:19:52.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "OdiseeConcerts\\ScaffoldingReadMe.txt",
@@ -862,19 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAwwFYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T13:11:49.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Windows 11\\Documents\\GitHub\\AD-maikelvandewinckel--2425--OdiseeConcerts\\OdiseeConcerts\\OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "OdiseeConcerts\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",

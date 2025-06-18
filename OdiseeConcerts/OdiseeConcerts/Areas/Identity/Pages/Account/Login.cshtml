@@ -43,14 +43,14 @@
             </form>
         </section>
     </div>
+    @* VERWIJDERD: De sectie voor externe authenticatiediensten is hier weggehaald *@
+    @*
     <div class="col-md-6 col-md-offset-2">
         <section>
             <h3>Gebruik een andere service om in te loggen.</h3> <hr />
             @{
-                // Controleer of er externe logins zijn geconfigureerd
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
-                    // Toon bericht als er geen externe logins zijn
                     <div>
                         <p>
                             Er zijn geen externe authenticatiediensten geconfigureerd. Zie dit
@@ -60,7 +60,6 @@
                 }
                 else
                 {
-                    // Toon knoppen voor externe logins indien aanwezig
                     <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
                         <div>
                             <p>
@@ -75,6 +74,7 @@
             }
         </section>
     </div>
+    *@
 </div>
 
 @section Scripts {
