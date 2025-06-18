@@ -142,7 +142,7 @@ using (var scope = app.Services.CreateScope())
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Concerts}/{action=Index}/{id?}"); // AANGEPAST: Standaard controller is nu Concerts
 app.MapRazorPages();
 
 app.Run();

@@ -76,14 +76,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +98,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFN1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Orders/UnpaidOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFVucGFpZE9yZGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Windows 11/Documents/GitHub/AD-maikelvandewinckel--2425--OdiseeConcerts/OdiseeConcerts/OdiseeConcerts/Views/Shared/Error.cshtml]

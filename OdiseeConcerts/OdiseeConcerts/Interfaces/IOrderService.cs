@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic; // Nodig voor IEnumerable
+using System.Threading.Tasks; // Nodig voor Task
 using OdiseeConcerts.ViewModels; // Nodig voor OrderFormViewModel en OrderViewModel
 
 namespace OdiseeConcerts.Interfaces
@@ -11,8 +12,8 @@ namespace OdiseeConcerts.Interfaces
         /// Creëert een nieuwe bestelling op basis van de gegevens in de OrderFormViewModel.
         /// </summary>
         /// <param name="model">De OrderFormViewModel met de bestelgegevens.</param>
-        /// <returns>Het ID van de zojuist aangemaakte bestelling.</returns>
-        Task<int> CreateOrder(OrderFormViewModel model); // AANGEPAST: Methode is nu async Task<int>
+        /// <returns>Het ID van de zojuist aangemaakte bestelling (of 0 bij falen).</returns>
+        Task<int> CreateOrder(OrderFormViewModel model); // Zorg dat de parameter hier OrderFormViewModel model is
 
         /// <summary>
         /// Haalt een specifieke bestelling op en mapt deze naar een OrderViewModel.
@@ -26,10 +27,14 @@ namespace OdiseeConcerts.Interfaces
         /// </summary>
         /// <param name="orderId">Het ID van de bestelling.</param>
         /// <param name="paid">De nieuwe betaalstatus (true voor betaald, false voor onbetaald).</param>
-        void UpdatePaid(int orderId, bool paid);
+        /// <returns>True als de update succesvol was, anders False.</returns>
+        Task<bool> UpdatePaid(int orderId, bool paid); // AANGEPAST: Return type is nu Task<bool>
 
-        // Let op: GetOrdersByStatus is hier ook al genoemd in je architectuur,
-        // maar we implementeren hem pas als we die functionaliteit echt nodig hebben.
-        // IEnumerable<OrderViewModel> GetOrdersByStatus(bool paid);
+        /// <summary>
+        /// Bevestigt de betaling voor een specifieke bestelling.
+        /// </summary>
+        /// <param name="orderId">Het ID van de bestelling waarvan de betaling moet worden bevestigd.</param>
+        /// <returns>True als de betaling succesvol is bevestigd, anders False.</returns>
+        Task<bool> ConfirmOrderPaymentAsync(int orderId);
     }
 }

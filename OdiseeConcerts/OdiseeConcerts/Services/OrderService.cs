@@ -5,6 +5,7 @@ using OdiseeConcerts.ViewModels;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore; // Toegevoegd voor DbUpdateConcurrencyException
 
 namespace OdiseeConcerts.Services
 {
@@ -56,22 +57,8 @@ namespace OdiseeConcerts.Services
                 discountApplied = true;
                 Console.WriteLine($"[OrderService] Member card applied. New finalPricePerTicket: {finalPricePerTicket:F2}");
             }
-            // VERWIJDERD: Strikte validatie van PricePerTicket en TotalPrice die van de client komen
-            // Dit zorgt voor robuustere prijsafhandeling aan de serverzijde.
-            // decimal expectedPricePerTicket = finalPricePerTicket;
-            // if (Math.Abs(expectedPricePerTicket - model.PricePerTicket) > 0.01m)
-            // {
-            //     Console.WriteLine($"[OrderService] Price mismatch for PricePerTicket. Expected: {expectedPricePerTicket:F2}, Received: {model.PricePerTicket:F2}");
-            //     return 0; // Prijs per ticket komt niet overeen
-            // }
 
             decimal finalTotalPrice = finalPricePerTicket * model.NumberOfTickets;
-            // VERWIJDERD: Strikte validatie van TotalPrice die van de client komt
-            // if (Math.Abs(finalTotalPrice - model.TotalPrice) > 0.01m)
-            // {
-            //     Console.WriteLine($"[OrderService] Price mismatch for TotalPrice. Expected: {finalTotalPrice:F2}, Received: {model.TotalPrice:F2}");
-            //     return 0; // Totale prijs komt niet overeen
-            // }
 
             var order = new Order
             {
@@ -137,18 +124,51 @@ namespace OdiseeConcerts.Services
             };
         }
 
-        public async void UpdatePaid(int orderId, bool paid)
+        /// <summary>
+        /// Werkt de betaalstatus van een bestelling bij.
+        /// </summary>
+        /// <param name="orderId">Het ID van de bestelling.</param>
+        /// <param name="paid">De nieuwe betaalstatus (true voor betaald, false voor onbetaald).</param>
+        /// <returns>True als de update succesvol was, anders False.</returns>
+        public async Task<bool> UpdatePaid(int orderId, bool paid)
         {
             var order = _orderRepository.GetOrderById(orderId);
-            if (order != null)
-            {
-                order.Paid = paid;
-                await _orderRepository.UpdateOrder(order);
-            }
-            else
+            if (order == null)
             {
                 Console.WriteLine($"[OrderService] Warning: Order with ID {orderId} not found for UpdatePaid.");
+                return false;
             }
+
+            // Alleen updaten als de status wijzigt
+            if (order.Paid == paid)
+            {
+                Console.WriteLine($"[OrderService] Order {orderId} already has paid status {paid}. No update needed.");
+                return true; // Al de gewenste status, beschouw als succes
+            }
+
+            order.Paid = paid;
+            try
+            {
+                await _orderRepository.UpdateOrder(order);
+                Console.WriteLine($"[OrderService] Order {orderId} paid status updated to {paid}.");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[OrderService] ERROR: Failed to update paid status for order {orderId}. Exception: {ex.Message}");
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Bevestigt de betaling voor een specifieke bestelling.
+        /// </summary>
+        /// <param name="orderId">Het ID van de bestelling waarvan de betaling moet worden bevestigd.</param>
+        /// <returns>True als de betaling succesvol is bevestigd, anders False.</returns>
+        public async Task<bool> ConfirmOrderPaymentAsync(int orderId)
+        {
+            // Direct gebruik maken van de bestaande en nu robuustere UpdatePaid methode
+            return await UpdatePaid(orderId, true);
         }
     }
 }

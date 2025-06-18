@@ -1,0 +1,101 @@
+﻿@model IEnumerable<OdiseeConcerts.Models.Order>
+
+@{
+    ViewData["Title"] = "Onbetaalde Bestellingen";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Bestellingen die wachten op bevestiging betaling.</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Concert
+            </th>
+            <th>
+                Ticket type
+            </th>
+            <th>
+                Aantal tickets
+            </th>
+            <th>
+                Totale prijs
+            </th>
+            <th>
+                Korting
+            </th>
+            <th>
+                Klant
+            </th>
+            <th>
+                Betaald
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @* VERBETERD: Explicietere null-checks voor Concert details en correcte eigenschap (Artist i.p.v. Name) *@
+                    @{
+                        var concertInfo = "Onbekend Concert";
+                        if (item.TicketOffer?.Concert != null)
+                        {
+                            // Correctie: Concert heeft een 'Artist' eigenschap, geen 'Name'
+                            concertInfo = $"{item.TicketOffer.Concert.Artist} - {item.TicketOffer.Concert.Location} - {item.TicketOffer.Concert.Date.Date.ToString("dd/MM/yyyy")}";
+                        }
+                    }
+                    @concertInfo
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketOffer.TicketType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumTickets)
+                </td>
+                <td>
+                    € @Html.DisplayFor(modelItem => item.TotalPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiscountApplied)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Paid)
+                </td>
+                <td>
+                    @if (!item.Paid)
+                    {
+                        <form asp-action="ConfirmPayment" asp-route-id="@item.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-primary btn-sm" onclick="return confirm('Weet u zeker dat u de betaling voor deze bestelling wilt bevestigen?');">Bevestig betaling</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span>Betaald</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
