@@ -23,13 +23,14 @@
                         <!-- Rode box voor de datum -->
                         <div class="d-flex justify-content-center mb-3">
                             <div class="rounded-pill p-2 text-white text-center shadow date-box-red">
-                                @concert.Date.ToString("dd MMM yyyy") <!-- AANGEPAST: Jaartal toegevoegd aan datumopmaak -->
+                                @concert.Date.ToString("dd MMM yyyy") <!-- Datumopmaak aangepast voor duidelijkheid -->
                             </div>
                         </div>
 
                         <div class="mt-auto text-center">
                             <!-- Dynamische knop gebaseerd op beschikbare tickets -->
-                            <a asp-action="Buy" asp-route-id="@concert.Id" class="btn @concert.ButtonClass btn-lg w-75 rounded-pill shadow-sm">
+                            <!-- AANGEPAST: Linkt nu naar de Concerts/Details pagina met het Concert.Id -->
+                            <a asp-action="Details" asp-route-id="@concert.Id" class="btn @concert.ButtonClass btn-lg w-75 rounded-pill shadow-sm">
                                 @concert.ButtonText
                             </a>
                         </div>

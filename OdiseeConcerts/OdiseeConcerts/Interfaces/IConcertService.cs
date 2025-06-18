@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using OdiseeConcerts.ViewModels; // Nodig voor ConcertViewModel
+using OdiseeConcerts.ViewModels; // Nodig voor ConcertViewModel en ConcertTicketOffersViewModel
 
 namespace OdiseeConcerts.Interfaces
 {
@@ -12,5 +12,13 @@ namespace OdiseeConcerts.Interfaces
         /// </summary>
         /// <returns>Een IEnumerable van ConcertViewModel objecten.</returns>
         IEnumerable<ConcertViewModel> GetAllConcerts();
+
+        /// <summary>
+        /// Haalt de details van een specifiek concert op, inclusief alle bijbehorende ticketaanbiedingen,
+        /// en mapt deze naar een ConcertTicketOffersViewModel.
+        /// </summary>
+        /// <param name="concertId">Het ID van het concert.</param>
+        /// <returns>Een ConcertTicketOffersViewModel met concert- en ticketaanbiedingsdetails, of null als niet gevonden.</returns>
+        ConcertTicketOffersViewModel? GetConcertDetailsWithOffers(int concertId);
     }
 }

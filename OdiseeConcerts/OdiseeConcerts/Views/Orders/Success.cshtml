@@ -1,0 +1,101 @@
+﻿@model OdiseeConcerts.ViewModels.OrderViewModel
+
+@{
+    ViewData["Title"] = "Bestelling Succesvol!";
+}
+
+<div class="container my-5">
+    <div class="card shadow-lg p-4 rounded-lg text-center">
+        <h1 class="card-title text-success mb-3">
+            <i class="bi bi-check-circle-fill me-2"></i> Bestelling Succesvol!
+        </h1>
+        <p class="lead">Uw bestelling is succesvol geplaatst en de details zijn hieronder te vinden.</p>
+        <hr class="my-4">
+
+        <h4 class="mb-3">Besteloverzicht #@Model.Id</h4>
+
+        <div class="row text-start justify-content-center mb-4">
+            <div class="col-md-8">
+                <dl class="row">
+                    <dt class="col-sm-4">
+                        Concert:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.ConcertArtist - @Model.ConcertLocation
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Datum:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.ConcertDate.ToString("dd MMMM lọ HH:mm")
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Ticket Type:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.TicketType
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Prijs per Ticket:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.PricePerTicket.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Aantal Tickets:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.NumTickets
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Totale Prijs:
+                    </dt>
+                    <dd class="col-sm-8 fw-bold fs-5 text-primary">
+                        @Model.TotalPrice.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))
+                    </dd>
+
+                    @if (Model.DiscountApplied)
+                    {
+                        <div class="col-sm-12">
+                            <div class="alert alert-success mt-3" role="alert">
+                                Je lidkaart gaf je 10% korting.
+                            </div>
+                        </div>
+                    }
+
+                    <dt class="col-sm-4">
+                        Betaald:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @(Model.Paid ? "Ja" : "Nee")
+                    </dd>
+
+                    <dt class="col-sm-4">
+                        Besteld door:
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.UserFullName (@Model.UserEmail)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 col-md-6 mx-auto">
+            <a asp-controller="Concerts" asp-action="Index" class="btn btn-primary btn-lg rounded-pill">Terug naar Concerten</a>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <!-- Bootstrap Icons (nodig voor het vinkje-icoon) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+}
+
+@section Scripts {
+    <!-- Als je hier specifieke JavaScript voor deze pagina nodig hebt, plaats je het hier -->
+}

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OdiseeConcerts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63cc097553ad56bb77eba6bd6c16dfda5e4195e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed0b15bd4fb968be0467f7d4b5ae8173ade79a4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("OdiseeConcerts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OdiseeConcerts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

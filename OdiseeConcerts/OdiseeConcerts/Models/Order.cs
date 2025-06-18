@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation; // BELANGRIJK: Nieuwe using directive
+using System; // Nodig voor DateTime
 
 namespace OdiseeConcerts.Models
 {
@@ -9,8 +10,6 @@ namespace OdiseeConcerts.Models
         [Required]
         [Display(Name = "Gebruiker ID")] // Vertaald
         public string UserId { get; set; } = string.Empty; // FK naar AspNetUsers tabel (CustomUser.Id is string)
-
-        // De UserName property is hier VOLLEDIG VERWIJDERD.
 
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Aantal tickets moet minstens 1 zijn.")]
@@ -28,6 +27,9 @@ namespace OdiseeConcerts.Models
 
         [Display(Name = "Korting Toegepast")] // Vertaald
         public bool DiscountApplied { get; set; } = false;
+
+        [Display(Name = "Besteldatum")] // TOEGEVOEGD: OrderDate property
+        public DateTime OrderDate { get; set; } // Nieuwe property toegevoegd
 
         // Foreign Key
         [Display(Name = "Ticket Aanbieding ID")] // Vertaald

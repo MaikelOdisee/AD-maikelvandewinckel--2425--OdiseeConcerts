@@ -37,7 +37,10 @@ builder.Services.AddAuthorization(options =>
 // ===============================================
 builder.Services.AddScoped<IConcertRepository, ConcertRepository>();
 builder.Services.AddScoped<IConcertService, ConcertService>();
-// Voeg hier later andere repositories en services toe die je maakt
+builder.Services.AddScoped<ITicketOfferRepository, TicketOfferRepository>(); // TOEGEVOEGD
+builder.Services.AddScoped<ITicketOfferService, TicketOfferService>();     // TOEGEVOEGD
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();           // TOEGEVOEGD
+builder.Services.AddScoped<IOrderService, OrderService>();                 // TOEGEVOEGD
 // ===============================================
 
 builder.Services.AddControllersWithViews(); // Deze stond er al, zorg dat AddAuthorization erboven staat

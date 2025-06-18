@@ -1,36 +1,71 @@
-﻿@model OdiseeConcerts.Models.Concert
+﻿@model OdiseeConcerts.ViewModels.ConcertTicketOffersViewModel
 
 @{
-    ViewData["Title"] = "Details Concert"; // Vertaald
+    ViewData["Title"] = $"Koop tickets voor {Model.Artist}"; // Dynamische titel
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="container my-5">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
 
-<div>
-    <h4>Concert</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Artist)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Artist)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Location)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Location)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-    </dl>
+    <div class="row">
+        <!-- Linker kolom: Artiest afbeelding en concert details -->
+        <div class="col-md-5">
+            <div class="card shadow-sm rounded-lg mb-4">
+                <img src="@Model.ArtistPicture" class="card-img-top rounded-top-lg concert-artist-detail-img" alt="Afbeelding van @Model.Artist" onerror="this.onerror=null;this.src='/img/nopic.png';">
+                <div class="card-body">
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="rounded-pill p-2 text-white text-center shadow date-box-red-large">
+                            <span class="d-block fs-3 fw-bold">@Model.Date.ToString("dd")</span>
+                            <span class="d-block fs-6 text-uppercase">@Model.Date.ToString("MMM")</span>
+                            <span class="d-block fs-6">@Model.Date.ToString("yyyy")</span>
+                        </div>
+                    </div>
+                    <h5 class="card-title text-center mb-1">@Model.Artist</h5>
+                    <p class="card-text text-center text-muted">@Model.Location</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a asp-action="Index" class="btn btn-secondary rounded-pill w-75">Terug naar overzicht</a>
+            </div>
+        </div>
+
+        <!-- Rechter kolom: Lijst van ticketaanbiedingen -->
+        <div class="col-md-7">
+            <h3 class="mb-3">Beschikbare tickets:</h3>
+            @if (Model.TicketOffers != null && Model.TicketOffers.Any())
+            {
+                <ul class="list-group list-group-flush rounded-lg shadow-sm">
+                    @foreach (var offer in Model.TicketOffers.OrderByDescending(o => o.Price))
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <div>
+                                <h5 class="mb-1">@offer.TicketType</h5>
+                                <small class="text-muted">Ticketprijs: @offer.Price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))</small><br />
+                                <small class="text-muted">@offer.NumTickets tickets beschikbaar</small>
+                            </div>
+                            <div>
+                                @if (offer.NumTickets > 0)
+                                {
+                                    <a asp-controller="Concerts" asp-action="Buy" asp-route-id="@offer.Id" class="btn btn-primary rounded-pill btn-lg">Koop tickets</a>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-danger rounded-pill btn-lg" disabled>Uitverkocht</button>
+                                }
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="alert alert-info">Geen ticketaanbiedingen beschikbaar voor dit concert.</p>
+            }
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Bewerken</a> |
-    <a asp-action="Index" class="btn btn-secondary">Terug naar Overzicht</a>
-</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/concerts.css" asp-append-version="true" />
+}
+

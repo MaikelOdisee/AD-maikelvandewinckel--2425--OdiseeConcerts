@@ -1,19 +1,27 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations; // <-- Zorg dat deze using er staat!
+﻿using Microsoft.AspNetCore.Identity; // Nodig voor IdentityUser
+using System.ComponentModel.DataAnnotations; // Nodig voor [Display], [Required]
 
-namespace OdiseeConcerts.Models // <-- Zorg dat deze namespace overeenkomt met de map en projectnaam!
+namespace OdiseeConcerts.Models
 {
-    public class CustomUser : IdentityUser // <-- Deze definitie is cruciaal!
+    // Breid de standaard IdentityUser uit met specifieke eigenschappen voor je applicatie.
+    public class CustomUser : IdentityUser
     {
-        [Required(ErrorMessage = "Voornaam is verplicht.")]
+        [PersonalData] // Markeer als persoonlijke data voor AVG-doeleinden
         [Display(Name = "Voornaam")]
-        public string FirstName { get; set; }
+        [Required(ErrorMessage = "Voornaam is verplicht.")] // Voornaam is verplicht
+        public string FirstName { get; set; } = string.Empty; // Initialiseren om CS8618 op te lossen
 
-        [Required(ErrorMessage = "Familienaam is verplicht.")]
+        [PersonalData]
         [Display(Name = "Familienaam")]
-        public string LastName { get; set; }
+        [Required(ErrorMessage = "Familienaam is verplicht.")] // Familienaam is verplicht
+        public string LastName { get; set; } = string.Empty; // Initialiseren om CS8618 op te lossen
 
+        [PersonalData]
         [Display(Name = "Lidkaartnummer")]
-        public string? MemberCardNumber { get; set; } // Let op de '?' voor nullable string
+        public string? MemberCardNumber { get; set; } // Kan nullable zijn, dus geen string.Empty nodig, maar kan voor consistentie
+
+        [PersonalData]
+        [Display(Name = "Heeft Ledenkaart")]
+        public bool HasMemberCard { get; set; } // NIEUWE property toegevoegd om CS1061 op te lossen
     }
 }

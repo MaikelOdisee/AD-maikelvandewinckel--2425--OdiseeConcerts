@@ -1,0 +1,129 @@
+﻿@model OdiseeConcerts.ViewModels.OrderFormViewModel
+
+@{
+    ViewData["Title"] = "Koop Tickets";
+}
+
+<h1 class="my-4 text-center">@ViewData["Title"]</h1>
+
+<div class="container d-flex justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4 rounded-lg">
+            <h3 class="card-title text-center mb-4">Besteldetails</h3>
+            <hr />
+            <form asp-action="Buy" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- Verborgen velden voor data die we niet direct laten bewerken door de gebruiker,
+                     maar wel nodig zijn voor de POST-actie (en om Model.Artist/Location/Date te behouden bij POST-back) -->
+                <input type="hidden" asp-for="ConcertId" />
+                <input type="hidden" asp-for="TicketOfferId" />
+                @* VERWIJDERD: Hidden inputs voor PricePerTicket en TotalPrice - deze worden nu server-side bepaald! *@
+                <input type="hidden" asp-for="HasMemberCard" />
+                <input type="hidden" asp-for="AvailableTicketsInOffer" />
+                <input type="hidden" asp-for="UserId" />
+
+                <!-- Deze zijn nodig om de concertdetails te behouden bij een POST-back (bijv. validatiefout) -->
+                <input type="hidden" asp-for="Artist" />
+                <input type="hidden" asp-for="Location" />
+                <input type="hidden" asp-for="Date" />
+                <input type="hidden" asp-for="TicketDescription" />
+
+                <!-- Concert Details -->
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Concert:</label>
+                    <p class="form-control-plaintext">@Model.Artist - @Model.Location</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Datum:</label>
+                    <p class="form-control-plaintext">@Model.Date.ToString("dd MMMM lọ")</p>
+                </div>
+
+                <!-- Ticket Offer Details -->
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Type Ticket:</label>
+                    <p class="form-control-plaintext">@Model.TicketDescription</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Prijs per Ticket:</label>
+                    <!-- Belangrijk: Geef dit element een ID zodat JavaScript de waarde kan uitlezen -->
+                    <p class="form-control-plaintext" id="pricePerTicketDisplay">@Model.PricePerTicket.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))</p>
+                </div>
+
+                <!-- Aantal Tickets input -->
+                <div class="mb-3">
+                    <label asp-for="NumberOfTickets" class="form-label"></label>
+                    <input asp-for="NumberOfTickets" class="form-control" type="number" min="1" max="10" />
+                    <span asp-validation-for="NumberOfTickets" class="text-danger"></span>
+                    <small class="form-text text-muted">Beschikbaar: @Model.AvailableTicketsInOffer</small>
+                </div>
+
+                <!-- Ledenkaart Status -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" asp-for="HasMemberCard" disabled="disabled">
+                    <label class="form-check-label" asp-for="HasMemberCard">
+                        Ledenkaart (korting toegepast)
+                    </label>
+                    @if (Model.HasMemberCard)
+                    {
+                        <small class="text-success ms-2">10% korting is toegepast op de prijs per ticket.</small>
+                    }
+                    else
+                    {
+                        <small class="text-info ms-2">Geen ledenkaart gevonden.</small>
+                    }
+                </div>
+
+                <!-- Totale Prijs (wordt dynamisch bijgewerkt met JavaScript) -->
+                <div class="mb-4">
+                    <label asp-for="TotalPrice" class="form-label fw-bold fs-5"></label>
+                    <!-- Belangrijk: Geef dit element een ID zodat JavaScript de waarde kan bijwerken.
+                         De 'value' wordt initieel ingesteld op de Model.TotalPrice die van de server komt. -->
+                    <input type="text" id="totalPriceDisplay" class="form-control form-control-lg text-end" readonly value="@Model.TotalPrice.ToString("F2", System.Globalization.CultureInfo.GetCultureInfo("nl-BE"))" />
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">Plaats Bestelling</button>
+                    <a asp-action="Index" class="btn btn-secondary rounded-pill">Terug naar Concerten</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Haal de prijs per ticket uit de displayed text.
+            // We moeten het formaat van de string omzetten naar een getal dat JavaScript kan begrijpen.
+            const pricePerTicketText = document.getElementById('pricePerTicketDisplay').innerText;
+            // Verwijder valuta-symbool (€), spaties, en vervang komma door punt voor parseFloat
+            const pricePerTicket = parseFloat(pricePerTicketText.replace(/€/g, '').replace(/\s/g, '').replace(',', '.'));
+
+            const numberOfTicketsInput = document.querySelector('[name="NumberOfTickets"]');
+            const totalPriceDisplay = document.getElementById('totalPriceDisplay');
+
+            function calculateTotalPrice() {
+                const quantity = parseInt(numberOfTicketsInput.value);
+
+                if (!isNaN(pricePerTicket) && !isNaN(quantity) && quantity >= 0) {
+                    const total = pricePerTicket * quantity;
+                    // Formatteer de prijs terug naar het Nederlandse formaat met twee decimalen (punt als duizendseparator, komma als decimaal)
+                    totalPriceDisplay.value = total.toLocaleString('nl-BE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                } else {
+                    totalPriceDisplay.value = '0,00'; // Standaardwaarde in Nederlands formaat
+                }
+            }
+
+            // Initial calculation bij het laden van de pagina
+            calculateTotalPrice();
+
+            // Event listeners voor veranderingen in het aantal tickets
+            numberOfTicketsInput.addEventListener('input', calculateTotalPrice);
+        });
+    </script>
+}
